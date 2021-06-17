@@ -27,4 +27,4 @@ else
     line_length="${LINE_LENGTH}"
 fi
 
-black --line-length ${line_length} --check ${python_files}
+black --skip-string-normalization --line-length ${line_length} --check ${python_files}
